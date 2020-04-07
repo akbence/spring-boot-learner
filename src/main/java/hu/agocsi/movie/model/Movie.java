@@ -26,8 +26,7 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie(Long id, String title, double rating) {
-        this.id = id;
+    public Movie( String title, double rating) {
         this.title = title;
         this.rating = rating;
     }
@@ -55,6 +54,15 @@ public class Movie {
     public void setTitle(String title) {
         this.title = title;
     }
+
+    public Set<Person> getPersons() {
+        return persons;
+    }
+
+    public void setPersons(Set<Person> persons) {
+        this.persons = persons;
+    }
+
 
     @Override
     public boolean equals(Object o) {

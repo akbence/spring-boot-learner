@@ -22,10 +22,9 @@ public class Person {
     public Person() {
     }
 
-    public Person(String givenName, String familyName, Set<Movie> movie) {
+    public Person(String givenName, String familyName) {
         this.givenName = givenName;
         this.familyName = familyName;
-        this.movie = movie;
     }
 
     public String getGivenName() {
