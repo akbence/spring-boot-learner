@@ -17,7 +17,7 @@ public class Person {
     private String familyName;
 
     @ManyToMany(mappedBy = "persons")
-    Set <Movie> movie = new HashSet<>();
+    private Set <Movie> movie = new HashSet<>();
 
     public Person() {
     }
@@ -25,6 +25,14 @@ public class Person {
     public Person(String givenName, String familyName) {
         this.givenName = givenName;
         this.familyName = familyName;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getGivenName() {
