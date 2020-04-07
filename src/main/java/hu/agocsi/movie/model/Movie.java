@@ -6,6 +6,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,6 +19,10 @@ public class Movie {
     private String title;
     private double rating;
 
+    @OneToOne
+    private Studio studio;
+
+
     @ManyToMany
     @JoinTable(name = "movie_x_person",joinColumns = @JoinColumn(name = "movie_id"),
     inverseJoinColumns = @JoinColumn(name = "person_id"))
@@ -26,9 +31,10 @@ public class Movie {
     public Movie() {
     }
 
-    public Movie( String title, double rating) {
+    public Movie( String title, double rating, Studio studio) {
         this.title = title;
         this.rating = rating;
+        this.studio = studio;
     }
 
     public double getRating() {
@@ -87,5 +93,13 @@ public class Movie {
                 ", rating=" + rating +
                 ", persons=" + persons +
                 '}';
+    }
+
+    public Studio getStudio() {
+        return studio;
+    }
+
+    public void setStudio(Studio studio) {
+        this.studio = studio;
     }
 }
