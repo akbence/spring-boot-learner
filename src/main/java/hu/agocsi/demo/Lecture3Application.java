@@ -14,7 +14,6 @@ public class Lecture3Application {
     public static void main(String[] args) {
 
         ApplicationContext ctx = SpringApplication.run(Lecture3Application.class, args);
-
         MyController controller = (MyController) ctx.getBean("myController");
 
         System.out.println(controller.hello());
