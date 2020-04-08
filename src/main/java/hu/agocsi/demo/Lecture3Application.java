@@ -1,6 +1,9 @@
 package hu.agocsi.demo;
 
+import hu.agocsi.demo.controllers.ConstructorInjectedController;
+import hu.agocsi.demo.controllers.GetterInjectedController;
 import hu.agocsi.demo.controllers.MyController;
+import hu.agocsi.demo.controllers.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,5 +18,9 @@ public class Lecture3Application {
         MyController controller = (MyController) ctx.getBean("myController");
 
         controller.hello();
+
+        System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
+        System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
+        System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
     }
 }
