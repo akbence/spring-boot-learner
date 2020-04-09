@@ -13,3 +13,6 @@ Understanding of spring-boot core concepts relating the DI
 Build a Spring Boot Jokes App
 
 ![Java CI with Maven](https://github.com/akbence/spring-boot-learner/workflows/Java%20CI%20with%20Maven/badge.svg?branch=master)
+
+## Lecture5 (also on the lecture4 branch)
+Play with the Spring boot configuration
