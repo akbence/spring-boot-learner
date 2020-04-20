@@ -12,16 +12,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@PropertySources({
-        @PropertySource("classpath:datasource.properties"),
-        @PropertySource("classpath:jms.properties")
-})
-//@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
 public class PropertyConfig {
-
-
-    @Autowired
-    Environment env;
 
     @Value("${guru.username}")
     String user;
@@ -47,7 +38,7 @@ public class PropertyConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setPassword(password);
         fakeDataSource.setUrl(url);
-        fakeDataSource.setUser(env.getProperty("USERNAME"));
+        fakeDataSource.setUser(user);
         return fakeDataSource;
     }
 
@@ -58,10 +49,5 @@ public class PropertyConfig {
         fakeJmsBroker.setUrl(jmsUrl);
         fakeJmsBroker.setUser(jmsUser);
         return fakeJmsBroker;
-    }
-
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer properties(){
-         return new PropertySourcesPlaceholderConfigurer();
     }
 }
