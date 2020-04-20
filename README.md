@@ -16,3 +16,6 @@ Build a Spring Boot Jokes App
 
 ## Lecture5 (also on the lecture4 branch)
 Play with the Spring boot configuration
+
+## Lecture 6 
+External properties with Spring
