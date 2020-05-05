@@ -21,4 +21,7 @@ Play with the Spring boot configuration
 External properties with Spring
 
 ## Lecture 7 
-Recipe project, Web development with Spring MVC
+Recipe project init, Web development with Spring MVC
+
+## Lecture 8
+JPA Data Modeling with Spring and Hibernate
