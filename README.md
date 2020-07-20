@@ -25,3 +25,9 @@ Recipe project init, Web development with Spring MVC
 
 ## Lecture 8
 JPA Data Modeling with Spring and Hibernate
+
+## Lecture 9 - Skipped
+Project Lombok. As I already know what is that, I skipped this section.
+
+## Lecture 10
+Testing Spring Framework applications
