@@ -5,6 +5,7 @@ import com.example.recipe.repositories.CategoryRepository;
 import com.example.recipe.repositories.RecipeRepository;
 import com.example.recipe.repositories.UnitofMeasureRepository;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Slf4j
 @Component
 public class RecipeBootstrap  implements ApplicationListener<ContextRefreshedEvent>{
     private final CategoryRepository categoryRepository;
@@ -30,6 +32,8 @@ public class RecipeBootstrap  implements ApplicationListener<ContextRefreshedEve
     @Transactional
     public void onApplicationEvent(ContextRefreshedEvent event) {
         recipeRepository.saveAll(getRecipes());
+        log.info("Loading Bootstrap data - info");
+        log.debug("Loading Bootstrap data - debug");
     }
 
     private List<Recipe> getRecipes() {
