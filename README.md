@@ -6,7 +6,7 @@
 This repository contains many branches, each branch have different purposes, to practice the Spring Boot framework. The lectures based upon  [this guide](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/). Most of the lectures created and made on different branches, tipically git-virgin branches, but from  Lecture7 the lectures build on each other, using the material created in the previous lecture.
 
 ## Lecture1-2 (master)
-A simple movie handling application to learn Spring Boot 2
+A simple movie handling application to learn Spring Boot
 
 ## Lecture3
 Understanding of spring-boot core concepts relating the DI
