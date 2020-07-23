@@ -3,7 +3,7 @@
 ![Java CI with Maven](https://github.com/akbence/spring-boot-learner/workflows/Java%20CI%20with%20Maven/badge.svg?branch=master)
 
 ## Overview
-This repository contains many branches, each branch have different purposes, to practice the Spring Boot framework. The lectures based upon  [this guide](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/).
+This repository contains many branches, each branch have different purposes, to practice the Spring Boot framework. The lectures based upon  [this guide](https://www.udemy.com/course/spring-framework-5-beginner-to-guru/). Most of the lectures created and made on different branches, tipically git-virgin branches, but from  Lecture7 the lectures build on each other, using the material created in the previous lecture.
 
 ## Lecture1-2 (master)
 A simple movie handling application to learn Spring Boot 2
@@ -21,7 +21,7 @@ Play with the Spring boot configuration
 External properties with Spring
 
 ## Lecture 7 
-Recipe project init, Web development with Spring MVC
+Recipe project init, Web development with Spring MVC.
 
 ## Lecture 8
 JPA Data Modeling with Spring and Hibernate
@@ -30,4 +30,7 @@ JPA Data Modeling with Spring and Hibernate
 Project Lombok. Refactoring the Lecture8 app using these features.
 
 ## Lecture 10
-Testing Spring Framework applications
+Testing Spring Framework applications. Unit and integration tests with JUnit 5 and Mockito
+
+## Lecture 11
+CRUD Operations with Spring MVC
